@@ -8,6 +8,12 @@
  - | 官网的东西还是真好使，文档写的也清晰 | [7085ed7](https://github.com/Hillkinsh/my-webpack/commit/7085ed7)
 
 
+### 📝 文档
+范围|描述|commitId
+--|--|--
+ - | 更新readme | [87faebe](https://github.com/Hillkinsh/my-webpack/commit/87faebe)
+
+
 ### 修复
 范围|描述|commitId
 --|--|--
