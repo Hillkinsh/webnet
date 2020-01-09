@@ -5,6 +5,7 @@
 --|--|--
  - | add commit lint | [03653e0](https://github.com/Hillkinsh/my-webpack/commit/03653e0)
  - | update index.js | [758ab61](https://github.com/Hillkinsh/my-webpack/commit/758ab61)
+ - | 官网的东西还是真好使，文档写的也清晰 | [7085ed7](https://github.com/Hillkinsh/my-webpack/commit/7085ed7)
 
 
 ### 修复
