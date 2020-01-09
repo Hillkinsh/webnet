@@ -10,5 +10,10 @@
     "@commitlint/config-conventional": "^8.3.4",
     "commitlint": "^8.3.4",
     "husky": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
