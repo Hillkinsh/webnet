@@ -1,0 +1,14 @@
+{
+  "name": "my-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "commitmsg": "commitlint -E GIT_PARAMS"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitlint": "^8.3.4",
+    "husky": "^4.0.3"
+  }
+}
