@@ -13,4 +13,9 @@
 * he tui ([9d39321](https://github.com/Hillkinsh/my-webpack/commit/9d39321))
 
 
+### 🚀 性能优化
+
+* 修改脚本log出发情况 ([5f81069](https://github.com/Hillkinsh/my-webpack/commit/5f81069))
+
+
 
