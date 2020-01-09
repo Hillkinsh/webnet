@@ -4,18 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "log": "conventional-changelog --config node_modules/jimi-web-changelog/lib/log -i CHANGELOG.md -s -r 0",
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0",
     "cz": "npm run log && git add . && git cz"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.4",
-    "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.0.3",
     "commitlint": "^8.3.4",
     "conventional-changelog-cli": "^2.0.31",
     "husky": "^4.0.3",
-    "jimi-web-changelog": "^0.1.7"
+    "vue-cli-plugin-commitlint": "^1.0.12"
   },
+  "dependencies": {},
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
@@ -23,8 +22,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/jimi-web-changelog/lib/cz"
+      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
     }
-  },
-  "dependencies": {}
+  }
 }

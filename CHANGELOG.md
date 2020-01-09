@@ -1,21 +1,36 @@
 # 1.0.0 (2020-01-09)
 
 ### 🌟 新功能
-
-* add commit lint ([03653e0](https://github.com/Hillkinsh/my-webpack/commit/03653e0))
-* hello ([58d95ac](https://github.com/Hillkinsh/my-webpack/commit/58d95ac))
-* update index.js ([758ab61](https://github.com/Hillkinsh/my-webpack/commit/758ab61))
-* 修改bug ([51a4f64](https://github.com/Hillkinsh/my-webpack/commit/51a4f64))
-
-
-### 🐛 Bug 修复
-
-* he tui ([9d39321](https://github.com/Hillkinsh/my-webpack/commit/9d39321))
+范围|描述|commitId
+--|--|--
+ - | add commit lint | [03653e0](https://github.com/Hillkinsh/my-webpack/commit/03653e0)
+ - | update index.js | [758ab61](https://github.com/Hillkinsh/my-webpack/commit/758ab61)
 
 
-### 🚀 性能优化
+### 修复
+范围|描述|commitId
+--|--|--
+ - | he tui | [9d39321](https://github.com/Hillkinsh/my-webpack/commit/9d39321)
+ - | 为啥上次修改log没变 | [349b475](https://github.com/Hillkinsh/my-webpack/commit/349b475)
 
-* 修改脚本log出发情况 ([5f81069](https://github.com/Hillkinsh/my-webpack/commit/5f81069))
+
+### 性能优化
+范围|描述|commitId
+--|--|--
+ - | 修改脚本log出发情况 | [5f81069](https://github.com/Hillkinsh/my-webpack/commit/5f81069)
 
 
+### 新功能
+范围|描述|commitId
+--|--|--
+ - | hello | [58d95ac](https://github.com/Hillkinsh/my-webpack/commit/58d95ac)
+ - | 修改bug | [51a4f64](https://github.com/Hillkinsh/my-webpack/commit/51a4f64)
+
+
+范围|描述|commitId
+--|--|--
+ - | update gitignore | [1d10663](https://github.com/Hillkinsh/my-webpack/commit/1d10663)
+ - | test | [ab91e6d](https://github.com/Hillkinsh/my-webpack/commit/ab91e6d)
+ - | add husky | [530fffb](https://github.com/Hillkinsh/my-webpack/commit/530fffb)
+ - | init | [2b732af](https://github.com/Hillkinsh/my-webpack/commit/2b732af)
 
