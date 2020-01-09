@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "commitmsg": "commitlint -E GIT_PARAMS",
+    "log": "conventional-changelog --config node_modules/jimi-web-changelog/lib/log -i CHANGELOG.md -s -r 0",
     "cz": "git add . && git cz"
   },
   "devDependencies": {
@@ -13,11 +13,17 @@
     "commitizen": "^4.0.3",
     "commitlint": "^8.3.4",
     "conventional-changelog-cli": "^2.0.31",
-    "husky": "^4.0.3"
+    "husky": "^4.0.3",
+    "jimi-web-changelog": "^0.1.7"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/jimi-web-changelog/lib/cz"
     }
   },
   "dependencies": {}
