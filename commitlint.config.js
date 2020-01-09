@@ -7,17 +7,28 @@ module.exports = Object.assign({}, require('jimi-web-changelog/lib/lint'), {
       2,
       'always',
       [
-        "docs", // Adds or alters documentation. 仅仅修改了文档，比如README, CHANGELOG, CONTRIBUTE等等
-        "chore", // Other changes that don't modify src or test files. 改变构建流程、或者增加依赖库、工具等
-        "feat", // Adds a new feature. 新增feature
-        "fix", // Solves a bug. 修复bug
-        "merge", // Merge branch ? of ?.
-        "perf", // Improves performance. 优化相关，比如提升性能、体验
-        "refactor", // Rewrites code without feature, performance or bug changes. 代码重构，没有加新功能或者修复bug
-        "revert", // Reverts a previous commit. 回滚到上一个版本                
-        "style", // Improves formatting, white-space. 仅仅修改了空格、格式缩进、都好等等，不改变代码逻辑                
-        "test", // Adds or modifies tests. 测试用例，包括单元测试、集成测试等    
-        "新功能",
+        '新功能',
+        'feat',
+        '修复',
+        'fix',
+        '性能优化',
+        'perf',
+        '代码样式',
+        'style',
+        '文档',
+        'docs',
+        '测试',
+        'test',
+        '重构',
+        'refactor',
+        '构建',
+        'build',
+        '持续集成',
+        'ci',
+        '杂',
+        'chore',
+        '撤销',
+        'revert'
       ]
     ]
   }
