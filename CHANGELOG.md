@@ -1,10 +1,11 @@
-# 1.0.0 (2020-01-09)
+# 1.0.0 (2020-01-10)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
  - | add commit lint | [03653e0](https://github.com/Hillkinsh/my-webpack/commit/03653e0)
  - | update index.js | [758ab61](https://github.com/Hillkinsh/my-webpack/commit/758ab61)
+ - | webpack初始化 | [2b348f1](https://github.com/Hillkinsh/my-webpack/commit/2b348f1)
  - | 官网的东西还是真好使，文档写的也清晰 | [7085ed7](https://github.com/Hillkinsh/my-webpack/commit/7085ed7)
 
 
