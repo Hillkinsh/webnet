@@ -19,6 +19,7 @@ const compiler = webpack(config.toConfig())
 const chainDevServer = compiler.options.devServer
 const server = new WebpackDevServer(compiler, Object.assign(chainDevServer, {}))
 
+;
 ['SIGINT', 'SIGTERM'].forEach(signal => {
   process.on(signal, () => {
     server.close(() => {
