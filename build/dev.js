@@ -5,7 +5,7 @@ const WebpackDevServer = require('webpack-dev-server')
 const config = require('./base')()
 const port = 8080;
 const publicPath = '/common/'
-
+config.devtool('cheap-source-map')
 config.devServer
   .quiet(true)
   .hot(true)

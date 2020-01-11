@@ -15,6 +15,9 @@ module.exports = {
       landscape: false,
       landscapeUnit: 'vw',
       landscapeWidth: 568
+    },
+    autoprefixer: {
+      grid: "autoplace"
     }
   }
 }

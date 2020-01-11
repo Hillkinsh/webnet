@@ -10,7 +10,7 @@ const div = `<div class=mod><div>颜色应该是绿色</div></div>`
 let a = Array.isArray([]) ? '1' : '2'
 console.log(a)
 let b = [1, 2, 3].includes(a) ? a : 'b'
-console.log(b)
+// console.log(bc)
 document.body.innerHTML = div
 class TopProperty {
   _name;
