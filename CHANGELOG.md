@@ -1,4 +1,4 @@
-# 1.0.0 (2020-01-10)
+# 1.0.0 (2020-01-11)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -8,6 +8,7 @@
  - | webpack初始化 | [2b348f1](https://github.com/Hillkinsh/my-webpack/commit/2b348f1)
  - | 一个基本的webpack构建 | [5be761b](https://github.com/Hillkinsh/my-webpack/commit/5be761b)
  - | 官网的东西还是真好使，文档写的也清晰 | [7085ed7](https://github.com/Hillkinsh/my-webpack/commit/7085ed7)
+ - | 项目配置less | [db2441f](https://github.com/Hillkinsh/my-webpack/commit/db2441f)
 
 
 ### 📝 文档
