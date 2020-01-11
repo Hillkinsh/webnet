@@ -3,6 +3,7 @@
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
+ - | css自动添加前缀 | [a8b4bfd](https://github.com/Hillkinsh/my-webpack/commit/a8b4bfd)
  项目添加babel等插件 | 项目添加babel等插件 | [5a3d146](https://github.com/Hillkinsh/my-webpack/commit/5a3d146)
  - | add commit lint | [03653e0](https://github.com/Hillkinsh/my-webpack/commit/03653e0)
  - | update index.js | [758ab61](https://github.com/Hillkinsh/my-webpack/commit/758ab61)
