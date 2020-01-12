@@ -1,4 +1,4 @@
-# 1.0.0 (2020-01-11)
+# 1.0.0 (2020-01-12)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -16,6 +16,7 @@
 ### 📝 文档
 范围|描述|commitId
 --|--|--
+ - | bundle.js文档 | [7326442](https://github.com/Hillkinsh/my-webpack/commit/7326442)
  - | 更新readme | [87faebe](https://github.com/Hillkinsh/my-webpack/commit/87faebe)
 
 

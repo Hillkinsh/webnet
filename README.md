@@ -10,3 +10,12 @@
 2. 问题：如果我希望引用 less 如何操作
 3. 问题：如何使用 babel
 4. 问题：如何给 css 自动添加前缀
+5. webpack 性能优化怎么做
+   (分离 Manifest,
+   Code Splitting（代码分割
+   Bundle Splitting（打包分割）
+   Tree Shaking（删除死代码）
+   开启 gzip
+   dll (就是外部依赖库的缓存，从而减少打包时间，但效果一般)
+   参考文章 <https://segmentfault.com/a/1190000020485804>
+   )

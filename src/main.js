@@ -1,6 +1,6 @@
 require('./index.css')
 require('./style/index.less')
-
+import calculator from './js/a'
 const h2 = document.createElement('h2')
 h2.className = 'test'
 h2.innerText = 'testaaa'
@@ -12,6 +12,7 @@ console.log(a)
 let b = [1, 2, 3].includes(a) ? a : 'b'
 // console.log(bc)
 document.body.innerHTML = div
+console.log(calculator.add(1, 2))
 class TopProperty {
   _name;
   _age;
