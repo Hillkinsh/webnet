@@ -1,0 +1,20 @@
+2021-07-24 09:29:39,360 INFO 3473 [egg:logger] init all loggers with options: {"dir":"/Users/xqs/Documents/git/webnet/logs/ssr-with-js","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"ssr-with-js-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-07-24 09:29:39,489 INFO 3473 [egg:core] dump config after load, 29ms
+2021-07-24 09:29:39,718 INFO 3473 [egg-watcher] Start watching: ["/Users/xqs/Documents/git/webnet/app","/Users/xqs/Documents/git/webnet/config","/Users/xqs/Documents/git/webnet/mocks","/Users/xqs/Documents/git/webnet/mocks_proxy","/Users/xqs/Documents/git/webnet/app.js"]
+2021-07-24 09:29:39,718 INFO 3473 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/app"
+2021-07-24 09:29:39,721 INFO 3473 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/config"
+2021-07-24 09:29:39,722 INFO 3473 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/mocks"
+2021-07-24 09:29:39,722 INFO 3473 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/mocks_proxy"
+2021-07-24 09:29:39,722 INFO 3473 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/app.js"
+2021-07-24 09:29:39,725 INFO 3473 [egg-watcher:agent] watcher start success
+2021-07-24 09:29:39,760 INFO 3473 [egg:core] dump config after ready, 8ms
+2021-07-24 09:37:18,115 INFO 5297 [egg:logger] init all loggers with options: {"dir":"/Users/xqs/Documents/git/webnet/logs/ssr-with-js","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"ssr-with-js-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2021-07-24 09:37:18,230 INFO 5297 [egg:core] dump config after load, 26ms
+2021-07-24 09:37:18,498 INFO 5297 [egg-watcher] Start watching: ["/Users/xqs/Documents/git/webnet/app","/Users/xqs/Documents/git/webnet/config","/Users/xqs/Documents/git/webnet/mocks","/Users/xqs/Documents/git/webnet/mocks_proxy","/Users/xqs/Documents/git/webnet/app.js"]
+2021-07-24 09:37:18,499 INFO 5297 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/app"
+2021-07-24 09:37:18,501 INFO 5297 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/config"
+2021-07-24 09:37:18,501 INFO 5297 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/mocks"
+2021-07-24 09:37:18,502 INFO 5297 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/mocks_proxy"
+2021-07-24 09:37:18,502 INFO 5297 [egg-watcher] Start watching: "/Users/xqs/Documents/git/webnet/app.js"
+2021-07-24 09:37:18,504 INFO 5297 [egg-watcher:agent] watcher start success
+2021-07-24 09:37:18,552 INFO 5297 [egg:core] dump config after ready, 6ms
