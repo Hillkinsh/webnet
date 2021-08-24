@@ -5,7 +5,6 @@ const paths = require('./paths')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent')
 const getStyleLoaders = require('./util').getStyleLoaders
-
 const webpackModule = {
   strictExportPresence: true,
   rules: [
@@ -34,7 +33,7 @@ const webpackModule = {
                   modules: false
                 }
               ],
-              require.resolve('@babel/preset-react')
+              ['react-app', { flow: false, typescript: true }]
             ],
             plugins: []
           }

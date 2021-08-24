@@ -1,16 +1,25 @@
 {
-  "keys": "/Users/xqs/Documents/git/webnet/config/config.default.js",
+  "keys": "/Users/xqs/Documents/git/webnet/src/config/config.default.ts",
+  "middleware": "/Users/xqs/Documents/git/webnet/src/config/config.default.ts",
   "static": {
-    "prefix": "/Users/xqs/Documents/git/webnet/config/config.default.js",
-    "dir": "/Users/xqs/Documents/git/webnet/config/config.default.js",
+    "dir": "/Users/xqs/Documents/git/webnet/src/config/config.default.ts",
+    "prefix": "/Users/xqs/Documents/git/webnet/src/config/config.default.ts",
     "dynamic": "/Users/xqs/Documents/git/webnet/node_modules/egg-static/config/config.default.js",
     "preload": "/Users/xqs/Documents/git/webnet/node_modules/egg-static/config/config.default.js",
     "buffer": "/Users/xqs/Documents/git/webnet/node_modules/egg-static/config/config.default.js",
     "maxFiles": "/Users/xqs/Documents/git/webnet/node_modules/egg-static/config/config.default.js"
   },
+  "development": {
+    "watchDirs": "/Users/xqs/Documents/git/webnet/src/config/config.local.ts",
+    "overrideDefault": "/Users/xqs/Documents/git/webnet/src/config/config.local.ts",
+    "ignoreDirs": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js"
+  },
   "proxy": {
-    "host": "/Users/xqs/Documents/git/webnet/config/config.local.js",
-    "match": "/Users/xqs/Documents/git/webnet/config/config.local.js"
+    "host": "/Users/xqs/Documents/git/webnet/src/config/config.local.ts",
+    "match": "/Users/xqs/Documents/git/webnet/src/config/config.local.ts"
   },
   "session": {
     "maxAge": "/Users/xqs/Documents/git/webnet/node_modules/egg-session/config/config.default.js",
@@ -26,7 +35,7 @@
     "csrf": {
       "enable": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
       "type": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.local.js",
       "useSession": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
       "cookieName": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
       "sessionName": "/Users/xqs/Documents/git/webnet/node_modules/egg-security/config/config.default.js",
@@ -129,14 +138,6 @@
       "disable": "/Users/xqs/Documents/git/webnet/node_modules/egg-multipart/config/config.default.js"
     }
   },
-  "development": {
-    "watchDirs": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js",
-    "overrideIgnore": "/Users/xqs/Documents/git/webnet/node_modules/egg-development/config/config.default.js"
-  },
   "logrotator": {
     "filesRotateByHour": "/Users/xqs/Documents/git/webnet/node_modules/egg-logrotator/config/config.default.js",
     "hourDelimiter": "/Users/xqs/Documents/git/webnet/node_modules/egg-logrotator/config/config.default.js",
@@ -164,54 +165,48 @@
   "pkg": {
     "name": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "version": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+    "description": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "dependencies": {
-      "egg": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "egg-static": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "midway": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "react": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "react-dom": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "react-router-dom": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "ykfe-utils": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "serialize-javascript": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
+      "serialize-javascript": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "ykfe-utils": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
     },
-    "scripts": {
-      "debug": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "start": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "ssr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "csr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "prod": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "build:server": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "build:client": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "build": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "analyze": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
-    },
-    "browserslist": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "devDependencies": {
       "@babel/core": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "@babel/polyfill": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "@babel/preset-env": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "@babel/preset-react": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "@types/react": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "@types/react-dom": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "@types/react-router-dom": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "@types/serialize-javascript": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "babel-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "browserslist": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "babel-preset-react-app": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "concurrently": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "cross-env": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "css-hot-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "css-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "css-modules-require-hook": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "egg-bin": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "egg-proxy": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "file-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "less": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "less-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "midway-bin": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "mini-css-extract-plugin": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "optimize-css-assets-webpack-plugin": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "postcss-flexbugs-fixes": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "postcss-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "postcss-preset-env": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "postcss-safe-parser": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-      "rimraf": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "react-dev-utils": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "rimraf": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "terser-webpack-plugin": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "tslint": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "tslint-config-standard": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "url-loader": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "webpack": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "webpack-bundle-analyzer": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
@@ -221,11 +216,30 @@
       "webpack-merge": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "webpack-node-externals": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
       "yk-cli": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
-    }
+    },
+    "engines": {
+      "node": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "prod": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "start": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "ssr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "csr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "build": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "build:ssr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "build:csr": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
+    },
+    "midway-bin-clean": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+    "repository": {
+      "type": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+      "url": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+    "license": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
   },
   "baseDir": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
   "HOME": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
   "dump": {
     "ignore": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
   },
@@ -265,9 +279,9 @@
     "disableConsoleAfterReady": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "outputJSON": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "buffer": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
+    "coreLogName": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
+    "agentLogName": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
     "errorLogName": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "coreLogger": {
       "consoleLevel": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.local.js"
@@ -312,5 +326,14 @@
     "maxWaitTime": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
     "responseTimeout": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/config.default.js",
+  "pluginOverwrite": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
+  "container": {
+    "ignore": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js"
+  },
+  "alinode": {
+    "logdir": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
+    "error_log": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js",
+    "packages": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/config.default.js"
+  }
 }

@@ -115,18 +115,26 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "/var/folders/cv/j9wbqxns47z_g0myyphsh6x80000gn/T/egg-multipart-tmp/ssr-with-js",
+      "tmpdir": "/var/folders/cv/j9wbqxns47z_g0myyphsh6x80000gn/T/egg-multipart-tmp/ssr-with-ts",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
       }
     },
     "development": {
-      "watchDirs": [],
+      "watchDirs": [
+        "app",
+        "lib",
+        "service",
+        "config",
+        "app.ts",
+        "agent.ts",
+        "interface.ts"
+      ],
       "ignoreDirs": [],
       "fastReady": false,
       "reloadOnDebug": true,
-      "overrideDefault": false,
+      "overrideDefault": true,
       "overrideIgnore": false
     },
     "logrotator": {
@@ -141,8 +149,8 @@
     "static": {
       "prefix": "/",
       "dir": [
-        "/Users/xqs/Documents/git/webnet/dist",
-        "/Users/xqs/Documents/git/webnet/app/public"
+        "/Users/xqs/Documents/git/webnet/output",
+        "/Users/xqs/Documents/git/webnet/src/app/public"
       ],
       "dynamic": true,
       "preload": false,
@@ -150,7 +158,7 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/xqs/Documents/git/webnet/app/view",
+      "root": "/Users/xqs/Documents/git/webnet/src/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -161,8 +169,8 @@
       "match": "/(\\/static)|(\\/sockjs-node)|(\\/__webpack_dev_server__)|hot-update/"
     },
     "env": "local",
-    "name": "ssr-with-js",
-    "keys": "<String len: 7>",
+    "name": "ssr-with-ts",
+    "keys": "<String len: 30>",
     "cookies": {},
     "maxIpsCount": 0,
     "maxProxyCount": 0,
@@ -170,61 +178,50 @@
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "",
     "pkg": {
-      "name": "ssr-with-js",
-      "version": "2.3.3",
+      "name": "ssr-with-ts",
+      "version": "2.3.16",
+      "description": "ykfe",
       "dependencies": {
-        "egg": "^2.21.0",
-        "egg-scripts": "^2.11.0",
-        "egg-static": "^2.2.0",
-        "react": "16.8.3",
-        "react-dom": "16.8.3",
-        "react-router-dom": "^5.0.0",
-        "ykfe-utils": "^3.0.0",
-        "serialize-javascript": "^2.1.2"
+        "egg-scripts": "^2.13.0",
+        "midway": "^1.0.0",
+        "react": "^16.10.2",
+        "react-dom": "^16.10.2",
+        "react-router-dom": "^5.1.2",
+        "serialize-javascript": "^2.1.2",
+        "ykfe-utils": "^3.0.0"
       },
-      "scripts": {
-        "debug": "egg-bin debug",
-        "start": "rimraf dist && concurrently \"npm run ssr\" \" npm run csr \"",
-        "ssr": "concurrently \"egg-bin dev\" \"cross-env NODE_ENV=development webpack --watch --config ./build/webpack.config.server.js\"",
-        "csr": "cross-env NODE_ENV=development ykcli dev",
-        "prod": "npm run build && eggctl start",
-        "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.config.server.js",
-        "build:client": "cross-env NODE_ENV=production ykcli build",
-        "build": "rimraf dist && npm run build:client && npm run build:server",
-        "analyze": "cross-env NODE_ENV=production npm_config_report=true npm run build"
-      },
-      "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 9",
-        "not op_mini all"
-      ],
       "devDependencies": {
         "@babel/core": "^7.4.4",
         "@babel/polyfill": "^7.4.4",
         "@babel/preset-env": "^7.5.5",
-        "@babel/preset-react": "^7.0.0",
+        "@types/node": "^10.6.0",
+        "@types/react": "16.9.5",
+        "@types/react-dom": "16.9.1",
+        "@types/react-router-dom": "^5.1.0",
+        "@types/serialize-javascript": "^1.5.0",
         "babel-loader": "8.0.4",
-        "browserslist": "^4.6.3",
-        "concurrently": "^4.1.0",
+        "babel-preset-react-app": "^9.0.2",
+        "concurrently": "^6.2.0",
         "cross-env": "^5.2.0",
         "css-hot-loader": "^1.4.3",
         "css-loader": "1.0.0",
-        "css-modules-require-hook": "^4.2.3",
-        "egg-bin": "^4.13.1",
         "egg-proxy": "^1.1.0",
         "file-loader": "2.0.0",
         "less": "^3.9.0",
         "less-loader": "^4.1.0",
+        "midway-bin": "1",
         "mini-css-extract-plugin": "^0.5.0",
         "optimize-css-assets-webpack-plugin": "5.0.1",
         "postcss-flexbugs-fixes": "4.1.0",
         "postcss-loader": "3.0.0",
         "postcss-preset-env": "^6.0.5",
         "postcss-safe-parser": "4.0.1",
-        "rimraf": "^2.6.3",
         "react-dev-utils": "^8.0.0",
+        "rimraf": "^2.6.3",
         "terser-webpack-plugin": "^1.2.0",
+        "tslint": "^5.11.0",
+        "tslint-config-standard": "^8.0.1",
+        "typescript": "^3.5.0",
         "url-loader": "1.1.1",
         "webpack": "4.19.1",
         "webpack-bundle-analyzer": "^3.0.3",
@@ -234,9 +231,31 @@
         "webpack-merge": "^4.1.4",
         "webpack-node-externals": "^1.7.2",
         "yk-cli": "^3.0.0"
-      }
+      },
+      "engines": {
+        "node": ">=10.16.0"
+      },
+      "scripts": {
+        "prod": "npm run build && NODE_ENV=production egg-scripts start --title=egg-server-ssr-with-ts --framework=midway --ts",
+        "start": "concurrently \"npm run ssr\" \"npm run csr\"",
+        "ssr": "concurrently \"cross-env NODE_ENV=development midway-bin dev --ts\" \"cross-env NODE_ENV=development webpack --watch --config ./build/webpack.config.server.js\"",
+        "csr": "cross-env NODE_ENV=development ykcli dev",
+        "build": "midway-bin build -c && npm run build:ssr && npm run build:csr",
+        "build:ssr": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.server.js",
+        "build:csr": "cross-env NODE_ENV=production ykcli build"
+      },
+      "midway-bin-clean": [
+        ".vscode/.tsbuildinfo",
+        "dist"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "author": "ykfe",
+      "license": "MIT"
     },
-    "baseDir": "/Users/xqs/Documents/git/webnet",
+    "baseDir": "/Users/xqs/Documents/git/webnet/src",
     "HOME": "/Users/xqs",
     "rundir": "/Users/xqs/Documents/git/webnet/run",
     "dump": {
@@ -270,7 +289,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/xqs/Documents/git/webnet/logs/ssr-with-js",
+      "dir": "/Users/xqs/Documents/git/webnet/logs/ssr-with-ts",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -278,9 +297,9 @@
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
-      "appLogName": "ssr-with-js-web.log",
-      "coreLogName": "egg-web.log",
-      "agentLogName": "egg-agent.log",
+      "appLogName": "midway-web.log",
+      "coreLogName": "midway-core.log",
+      "agentLogName": "midway-agent.log",
       "errorLogName": "common-error.log",
       "coreLogger": {
         "consoleLevel": "WARN"
@@ -333,9 +352,33 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "pluginOverwrite": false,
+    "container": {
+      "ignore": [
+        "**/logs/**",
+        "**/run/**",
+        "**/public/**",
+        "**/view/**",
+        "**/views/**",
+        "**/config/**",
+        "**/app/extend/**"
+      ],
+      "baseDir": "/Users/xqs/Documents/git/webnet/src"
+    },
+    "alinode": {
+      "logdir": "/tmp",
+      "error_log": [
+        "/Users/xqs/Documents/git/webnet/logs/ssr-with-ts/common-error.log",
+        "/Users/xqs/Documents/git/webnet/logs/stderr.log"
+      ],
+      "packages": [
+        "/Users/xqs/Documents/git/webnet/package.json"
+      ]
+    },
+    "middleware": [],
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares"
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
   },
   "plugins": {
     "onerror": {
@@ -456,7 +499,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xqs/Documents/git/webnet/node_modules/egg/config/plugin.js",
+      "from": "/Users/xqs/Documents/git/webnet/src/config/plugin.local.ts",
       "path": "/Users/xqs/Documents/git/webnet/node_modules/egg-static",
       "version": "2.2.0"
     },
@@ -484,6 +527,19 @@
       "path": "/Users/xqs/Documents/git/webnet/node_modules/egg-view",
       "version": "2.1.3"
     },
+    "schedulePlus": {
+      "enable": true,
+      "package": "midway-schedule",
+      "name": "schedulePlus",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "/Users/xqs/Documents/git/webnet/node_modules/midway-web/config/plugin.js",
+      "path": "/Users/xqs/Documents/git/webnet/node_modules/midway-schedule",
+      "version": "1.20.3"
+    },
     "proxy": {
       "package": "egg-proxy",
       "enable": true,
@@ -491,7 +547,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xqs/Documents/git/webnet/config/plugin.local.js",
+      "from": "/Users/xqs/Documents/git/webnet/src/config/plugin.local.ts",
       "path": "/Users/xqs/Documents/git/webnet/node_modules/egg-proxy",
       "version": "1.2.0"
     }

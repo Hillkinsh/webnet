@@ -1,10 +1,11 @@
-'use strict'
+import { provide } from 'midway'
+import { IApiService, IApiResult } from '../interface'
 
-const { Service } = require('egg')
+@provide('ApiService')
+export class ApiService implements IApiService {
 
-class ApiService extends Service {
-  index () {
-    return {
+  index (): Promise<IApiResult> {
+    return Promise.resolve({
       news: [
         {
           id: '1',
@@ -14,18 +15,19 @@ class ApiService extends Service {
           id: '2',
           title: 'Free Dropbox Accounts Now Only Sync to Three Devices'
         },
-        { id: '3',
+        {
+          id: '3',
           title: 'Voynich Manuscript Decoded by Bristol Academic'
         },
-        { id: '4',
+        {
+          id: '4',
           title: 'Burger King to Deliver Whoppers to LA Drivers Stuck in Traffic'
         },
-        { id: '5',
+        {
+          id: '5',
           title: 'How much do YouTube celebrities charge to advertise your product? '
         }
       ]
-    }
+    })
   }
 }
-
-module.exports = ApiService

@@ -35,18 +35,5 @@
     "stack": [
       "wrappedController"
     ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/api/getIndexData",
-    "regexp": "/^\\/api\\/getIndexData(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
   }
 ]
