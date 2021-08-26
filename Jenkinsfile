@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''echo $PATH
 echo 123
-npm install'''
+yarn'''
       }
     }
 
